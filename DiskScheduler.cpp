@@ -11,21 +11,7 @@ class DiskScheduling
 
 public:
     void getInput()
-    {
-        int n;
-        cout << "Enter number of requests: ";
-        cin >> n;
-
-        requests.resize(n);
-        cout << "Enter requests: ";
-        for (int i = 0; i < n; i++)
-        {
-            cin >> requests[i];
-        }
-
-        cout << "Enter initial head position: ";
-        cin >> head;
-    }
+    
     void fcfs()
     {
         int seek_time = 0;
